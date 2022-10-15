@@ -12,19 +12,41 @@
   src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "PT Sans" sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
   color: black;
 }
+
 /* Header */
 .page-header {
   background-color: #FFFFFF;
   color: black;
 }
 /* navigation */
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 510px;
+}
+.navigation-user-menu {
+  max-width: 270px;
+  margin-left: auto;
+}
 .navigation-link {
 font-family: "PT Sans";
 font-size: 20px;
@@ -45,6 +67,21 @@ list-style-type: none;
   padding: 8px 50px;
 }
 /* main-background*/
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
+}
+.greetings-logo {
+  display: block;
+  margin: 0 auto;
+}
+.main-container {
+  flex-grow: 1;
+}
 .main-index {
   font-family: "PT Sans";
   font-weight: 700;
@@ -52,9 +89,16 @@ list-style-type: none;
   line-height: 28px;
   color: black;
   background-color: #FFFFFF;
-  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  margin: 0 auto;
   background-size: 100% auto;
+}
+.greetings-promo {
+  background-image: url("../images/index-background.jpg");
+  height: 485px;
+
+
 }
 /* all-big-titles-layout */
 .big-titles-layout {
@@ -73,6 +117,33 @@ list-style-type: none;
   text-align: center;
 }
 /* Section-Advantages and services*/
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages-item.sedona-town {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-item.sedona-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .advantages-title,
 .services-title {
   font-weight: 700;
@@ -82,7 +153,9 @@ list-style-type: none;
 }
 .advantages-item {
   list-style-type: none;
+  width: 400px;
 }
+
 .advantages-description,
 .services-leave {
   font-weight: 400;
@@ -117,6 +190,12 @@ list-style-type: none;
   color:black
 }
 /* Section-search-hotel */
+.searching {
+  display: flex;
+  text-align: center;
+  width: 592px;
+  margin: 96px 304px;
+}
 .font-styles {
   font-weight: 400;
   font-size: 22px;
@@ -134,19 +213,24 @@ list-style-type: none;
   text-decoration: none;
   text-transform: uppercase;
 }
+.buttons-hotel {
+  margin-top: 62px;
+}
 /* Section-subscribe */
 .subscribe-background {
   background-image: url("../images/subcribe_background_blur.jpg");
-  padding-top: 96px;
+  /* padding-top: 96px;
   padding-left: 258px;
   padding-right: 104px;
-  padding-bottom: 258px;
+  padding-bottom: 258px; */
+  width: 1200px;
+  height: 414.86px;
   background-size: 100% auto;
   background-color: black;
 }
 .subscribe-title {
   color: #FFFFFF;
-  text-align: left;
+  /* text-align: left; */
 }
 .subscribe-information {
   color: #FFFFFF;
@@ -156,21 +240,40 @@ list-style-type: none;
   color: #FFFFFF;
   border-radius: 4px;
 }
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 684px;
+}
 /* page-footer */
 .footer-social-item {
   list-style-type: none;
 }
 /* section-contacts */
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+}
+.footer-social {
+  width: 142px;
+  margin-right: auto;
+}
+.footer-contacts {
+  width: 331px;
+}
+.footer-htmlacademy-logo {
+  width: 115px;
+  margin-left: auto;
+  height: 32.9px;
+}
 .footer-contacts-phone {
 text-decoration: none;
 font-weight: 400;
 font-size: 40px;
 line-height: 40px;
 color: black;
-}
-.footer-contacts {
-  text-align: center;
-}
-.footer-htmlacademy-logo {
-  text-align: right;
 }
