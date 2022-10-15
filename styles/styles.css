@@ -217,20 +217,16 @@ margin: 0 auto;
   margin-top: 62px;
 }
 /* Section-subscribe */
-.subscribe-background {
+.subscribe {
   background-image: url("../images/subcribe_background_blur.jpg");
-  /* padding-top: 96px;
-  padding-left: 258px;
-  padding-right: 104px;
-  padding-bottom: 258px; */
   width: 1200px;
   height: 414.86px;
   background-size: 100% auto;
   background-color: black;
 }
+
 .subscribe-title {
   color: #FFFFFF;
-  /* text-align: left; */
 }
 .subscribe-information {
   color: #FFFFFF;
@@ -240,12 +236,18 @@ margin: 0 auto;
   color: #FFFFFF;
   border-radius: 4px;
 }
-.subscribe-form {
+.subscribes-area {
   display: flex;
   justify-content: center;
-  padding: 0;
   margin: 0 auto;
   width: 684px;
+}
+.subscribe-mail-spam {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 96px;
+
 }
 /* page-footer */
 .footer-social-item {
