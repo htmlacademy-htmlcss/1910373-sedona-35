@@ -1,0 +1,381 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "PT Sans" sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: black;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Header */
+.page-header {
+  background-color: #FFFFFF;
+  color: black;
+
+}
+/* navigation */
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 510px;
+  display: flex;
+}
+.navigation-user-menu {
+  margin: 0;
+  padding: 0;
+  max-width: 268px;
+  display: flex;
+}
+
+.navigation-user-menu .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+}
+.navigation-link {
+font-family: "PT Sans";
+font-size: 20px;
+line-height: 24px;
+font-weight: 700;
+text-decoration: none;
+color: black;
+background-color: #FFFFFF;
+text-align: left;
+display: block;
+padding: 20px 16px;
+flex-wrap: wrap;
+}
+.navigation-link-logo {
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+  margin-right: 44px;
+}
+.navigation-item {
+list-style-type: none;
+}
+
+.navigation-button {
+  /* background-color: #756157;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 70px;
+  display: block; */
+}
+/* main-background */
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+}
+.greetings-logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+
+}
+.main-container {
+  flex-grow: 1;
+}
+.main-index {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  width: 1200px;
+  margin: 0 auto;
+  background-size: 100% auto;
+}
+.greetings-promo {
+  background-image: url("../images/index-background.jpg");
+  height: 485px;
+
+}
+/* all-big-titles-layout */
+.big-titles-layout {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+.greetings-description {
+ display: flex;
+ flex-direction: column;
+ padding: 0;
+ margin: 0;
+}
+.greetings-description-advantages {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+.greetings-description-title {
+  margin-top: 69px;
+}
+
+/* Section-Advantages and services*/
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+.advantages-item.sedona-town {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.advantages-item.sedona-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-top: 92px;
+
+}
+.advantages-item {
+  list-style-type: none;
+  width: 400px;
+}
+.advantages-sedona {
+  margin: 0 auto;
+}
+.advantages-bridge {
+  margin: 0 auto;
+}
+
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 62px;
+}
+.services-leave {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+.services-item {
+  list-style-type: none;
+}
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-top: 174px;
+
+
+}
+
+.advantages-background {
+  width: 400px;
+  height: 384px;
+}
+.sedona-town,
+.sedona-bridge {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+.attraction,
+.tourists,
+.souvenirs,
+.leave {
+  background-color: #83b3d31f;
+  color: black;
+}
+.beautiful-road {
+  background-color: #83b3d333;
+  color: black;
+}
+.food {
+  background-color: #FFFFFF;
+  color:black
+}
+
+
+
+
+/* Section-search-hotel */
+.searching {
+  display: flex;
+  text-align: center;
+  width: 592px;
+  padding: 96px 304px;
+}
+.font-styles {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.button-search-hotel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+  padding: 8px 50px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.buttons-hotel {
+  margin-top: 62px;
+}
+/* Section-subscribe */
+.subscribe {
+  background-image: url("../images/subcribe_background_blur.jpg");
+  width: 1200px;
+  height: 414.86px;
+  background-size: 100% auto;
+  background-color: black;
+}
+
+.subscribe-title {
+  color: #FFFFFF;
+}
+.subscribe-information {
+  color: #FFFFFF;
+}
+.button-subscribe {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.subscribes-area {
+   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 684px;
+}
+.subscribe-mail-spam {
+  padding-top: 96px;
+}
+.mail-area {
+  display: flex;
+  justify-content: center;
+
+}
+/* page-footer */
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /* margin-left: 70px; */
+}
+.footer-social-item {
+  list-style-type: none;
+  width: 47.33px;
+  height: 40px;
+}
+/* section-contacts */
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+
+}
+
+.footer-social {
+  width: 142px;
+  margin-right: auto;
+  padding-left: 70px;
+}
+.footer-contacts {
+  width: 331px;
+}
+.footer-htmlacademy-logo {
+  width: 115px;
+  margin-left: auto;
+  height: 32.9px;
+  margin-right: 70px;
+
+}
+.logo-academy {
+padding-top: 8.5px;
+padding-bottom: 8.6px;
+}
+
+.footer-contacts-phone {
+text-decoration: none;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+color: black;
+}
