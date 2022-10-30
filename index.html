@@ -11,8 +11,8 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link navigation-link-logo" href="#">
-              <img class="navigation-logo" src="./images/logo_city_of_sedona.svg" alt="Логотип Седоны" width="140"
-                height="70.05"> </a>
+          <img class="navigation-logo" src="./images/logo_city_of_sedona.svg" alt="Логотип Седоны" width="140"
+            height="70"> </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -21,21 +21,23 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" c href="#">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user-menu">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-user-menu">
+
+          <li class="navigation-item-user search-logo">
+            <a class="navigation-link navigation-log-menu-1" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item-user favorites-logo">
+            <a class="navigation-link navigation-log-menu-2" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item button-navigation">
+
+          <li class="button-navigation">
             <a class="navigation-link navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -91,21 +93,20 @@
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
         <ul class="services-list">
-            <li class="services-item leave advantages-background">
-              <h3 class="services-title">Жилье</h3>
-              <p class="services-leave">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
-            </li>
-            <li class="services-item food advantages-background">
-              <h3 class="services-title">Еда</h3>
-              <p class="services-leave">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-            </li>
-            <li class="services-item souvenirs advantages-background">
-              <h3 class="services-title">Сувениры</h3>
-              <p class="services-leave">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-            </li>
+          <li class="services-item leave advantages-background">
+            <h3 class="services-title">Жилье</h3>
+            <p class="services-leave">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+          </li>
+          <li class="services-item food advantages-background">
+            <h3 class="services-title">Еда</h3>
+            <p class="services-leave">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="services-item souvenirs advantages-background">
+            <h3 class="services-title">Сувениры</h3>
+            <p class="services-leave">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+          </li>
         </ul>
       </section>
-</section>
       <div class="searching">
         <section class="search-hotel">
           <h2 class="search-title big-titles-layout">Заинтересовались?
@@ -130,9 +131,9 @@
           <div class="mail-area">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="subscribe-form-letter">
-                <input type="email" name="subscribe-form-letter" placeholder="Ваш e-mail" class="subscribe-form-letter">
-                <button class="button button-subscribe" type="submit">Подписаться</button>
+                <input type="email" id="subscribe-form-letter" placeholder="Ваш e-mail" class="subscribe-form-letter">
               </label>
+              <button class="button button-subscribe" type="submit">Подписаться</button>
             </form>
           </div>
         </div>
@@ -142,20 +143,21 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
-          <!-- <h2 class="visually-hidden">Социальные сети</h2> -->
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+
+            <li class="footer-social-item button-vk">
+              <a class="social-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+            <li class="footer-social-item button-tm">
+              <a class="social-link " href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <li class="footer-social-item button-yt">
+              <a class="social-link " href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютьюб</span>
               </a>
             </li>
@@ -163,13 +165,15 @@
         </section>
 
         <section class="footer-contacts">
+          <h2 class="visually-hidden">Номер телефона</h2>
           <div class="number-phone">
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
         </section>
         <section class="footer-htmlacademy-logo">
+          <h2 class="visually-hidden">Сайт HTML Academy</h2>
           <div class="logo-academy">
-            <a class="button" href="https://htmlacademy.ru/">
+            <a class="social-link button-academy" href="https://htmlacademy.ru/">
               <span class="visually-hidden">Html academy</span>
             </a>
           </div>
