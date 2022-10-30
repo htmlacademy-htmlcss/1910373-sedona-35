@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
@@ -478,7 +478,7 @@ body {
 
 .logo-academy {
   background-image: url(../images/logo_htmlacademy.svg);
-  min-width: 114.90x;
+  min-width: 114.90px;
   min-height: 32.9px;
   background-repeat: no-repeat;
   margin-top: 8.5px;
@@ -589,18 +589,35 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 .catalog-filter-group {
-  border:0 none;
+  border: 0 none;
 }
 
-.search-container {
+.list-view {
   display: flex;
-  justify-content: space-between;
-  width: 1060px;
+  width: 160px;
+  margin: 0;
   padding: 0;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  margin-left: 70px;
+}
+
+.button-view {
+  text-decoration: none;
+}
+
+.button-tile {
+  background-image: url(../images/view1.svg);
+  background-repeat: no-repeat;
+}
+
+.button-icon {
+  background-image: url(../images/view2.svg);
+  background-repeat: no-repeat;
+}
+
+.button-list {
+  background-image: url(../images/view3.svg);
+  background-repeat: no-repeat;
 }
 
 .control {
@@ -631,6 +648,7 @@ body {
 
 
 }
+
 .hotel-item {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
@@ -704,9 +722,9 @@ input[type=number] {
 }
 
 .button-favorites {
-text-transform: uppercase;
-text-decoration: none;
-color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
 
 }
 
