@@ -163,7 +163,7 @@ body {
 .buttons-sedona:focus,
 .button-more:focus {
   background-color: #615048;
-  outline: none;
+
 }
 
 .buttons-sedona:active,
@@ -504,7 +504,7 @@ body {
 .button-apply:focus,
 .button-favorites:focus {
   background-color: #68a2ca;
-  outline: none;
+
 }
 
 .button-subscribe:active,
@@ -522,7 +522,7 @@ body {
 .button-favorites-green:focus {
   color: #ffffff;
   background-color: #6C9E42;
-  outline: none;
+
 }
 
 .button-favorites-green:active {
@@ -572,8 +572,6 @@ body {
 
 .social-buttons:focus path {
   fill: #68a2ca;
-  outline: none;
-  border: none;
 }
 
 .social-buttons:active path {
@@ -621,7 +619,6 @@ body {
 
 .link-svg-academy:focus path {
   fill: #756157;
-  outline: none;
 }
 
 .link-svg-academy:active path {
@@ -642,7 +639,6 @@ body {
 
 .footer-contacts-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .footer-contacts-phone:active {
@@ -1047,6 +1043,27 @@ input[type=number] {
   background-color: #7db54f;
 }
 
+.rating-4stars {
+  background-image: url(../images/Vector-star.svg);
+  width: 72px;
+  height: 17px;
+  background-repeat: repeat-x;
+}
+
+.rating-3stars {
+  background-image: url(../images/Vector-star.svg);
+  width: 53px;
+  height: 17px;
+  background-repeat: repeat-x;
+}
+
+.rating-2stars {
+  background-image: url(../images/Vector-star.svg);
+  width: 36px;
+  height: 17px;
+  background-repeat: repeat-x;
+}
+
 .amount-hotel {
   font-weight: 700;
   font-size: 30px;
@@ -1068,22 +1085,18 @@ input[type=number] {
 
 .select-control:hover {
   outline: 2px solid #68A2CA;
-  border: none;
 }
 
 .select-control:focus {
   outline: 2px solid #68A2CA;
-  border: none;
 }
 
 .select-control:active {
   outline: 2px solid #3F5E72;
-  border: none;
 }
 
 .select-control:disabled {
   color: #0000004d;
-  border: none;
   outline: 2px solid #0000004d;
 }
 
@@ -1165,19 +1178,17 @@ input[type=number] {
 
 .pagination-link-styles:hover {
   background-color: #68a2ca;
-  border: 1px solid #82B3D3;
+  outline: 1px solid #82B3D3;
 }
 
 .pagination-link-styles:focus {
   background-color: #68a2ca;
-  border: none;
   outline: 1px solid #82B3D3;
 }
 
 .pagination-link-styles:active {
   background-color: #82b3d3;
   color: #ffffff4d;
-  border: none;
   outline: 1px solid #82B3D3;
 }
 
