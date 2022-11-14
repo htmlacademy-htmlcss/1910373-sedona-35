@@ -129,14 +129,12 @@
               бойскаутское!
             </p>
           </div>
-          <div class="mail-area">
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscribe-form-letter">
-                <input type="email" id="subscribe-form-letter" placeholder="Ваш e-mail" class="subscribe-form-letter">
-              </label>
-              <button class="button button-subscribe" type="submit">Подписаться</button>
-            </form>
-          </div>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="subscribe-form-letter">
+              <input class="field" type="email" id="subscribe-form-letter" placeholder="Ваш e-mail">
+            </label>
+            <button class="button button-subscribe" type="submit">Подписаться</button>
+          </form>
         </div>
       </section>
     </main>
@@ -205,6 +203,44 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group field-group-first">
+              <label class="label-date-arrival" for="date-arrival">Дата Заезда:</label>
+              <input class="auth-form-field field-form" type="text" id="date-arrival" value="27 апреля 2020">
+            </p>
+            <p class="message-error">Мы не можем отправить вас в прошлое.</p>
+            <p class="field-group field-group-second">
+              <label class="label-date-arrival" for="date-arrival">Дата Выезда:</label>
+              <input class="auth-form-field field-form" type="text" id="date-arrival" value="1 сентября 2023">
+            </p>
+            <p class="message-no-error">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-number-of-persons-container">
+              <div class="number-of-persons">
+                <label class="label-number-of-persons" for="number-of-adults">Взрослые:</label>
+                <input class="input-number-of-persons" type="number" id="number-of-adults" min="1" max="20" value="2">
+                <button class="modal-button modal-button-minus-adults"></button>
+                <button class="modal-button modal-button-plus-adults"></button>
+              </div>
+              <div class="number-of-persons">
+                <label class="label-number-of-persons" for="number-of-childs">Дети:</label>
+                <input class="input-number-of-persons number-of-persons-current" type="number" id="number-of-childs"
+                  min="1" max="20" value="2">
+                <button class="modal-button modal-button-minus-childs"></button>
+                <button class="modal-button modal-button-plus-childs"></button>
+              </div>
+            </div>
+            <button class="modal-button-search" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
