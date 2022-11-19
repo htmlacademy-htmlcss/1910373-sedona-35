@@ -61,8 +61,8 @@
         </header>
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <fieldset class="catalog-filter-group catalog-filter-infrastructure">
+            <legend class="catalog-filter-title catalog-title-infrastructure">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -91,31 +91,31 @@
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-leave">
                   <input class="visually-hidden control-input" type="radio" name="type-of-house" value="hotel" checked>
                   <span class="control-radio"></span>
                   <span class="control-radio-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-leave ">
                   <input class="visually-hidden control-input" type="radio" name="type-of-house" value="motel">
                   <span class="control-radio"></span>
                   <span class="control-radio-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label class="control control-leave ">
                   <input class="visually-hidden control-input" type="radio" name="type-of-house" value="appartments">
                   <span class="control-radio"></span>
-                  <span class="control-radio-label">Аппартаменты</span>
+                  <span class="control-radio-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="price-container">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <legend class="catalog-filter-title catalog-filter-title-price">Стоимость, ₽:</legend>
             <div class="range">
               <div class="price-min-max">
                 <label class="price-catalog-filter price-catalog-current-left">
@@ -199,9 +199,9 @@
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </div>
             </a>
-            <div class="card-content card-content-inner">
+            <div class="card-content-inner">
               <span class="hotel-card-text">Гостиница</span>
-              <span class="price-card">От 4000р</span>
+              <span class="price-card">От 4000 ₽</span>
               <div class="button-container">
                 <a class="button-more" href="#">Подробнее</a>
               </div>
@@ -229,9 +229,9 @@
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </div>
             </a>
-            <div class="card-content card-content-inner">
+            <div class="card-content-inner">
               <span class="hotel-card-text">Гостиница</span>
-              <span class="price-card">От 5000р</span>
+              <span class="price-card">От 5000 ₽</span>
               <div class="button-container">
                 <a class="button-more" href="#">Подробнее</a>
               </div>
@@ -259,9 +259,9 @@
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </div>
             </a>
-            <div class="card-content card-content-inner">
+            <div class="card-content-inner">
               <span class="hotel-card-text">Гостиница</span>
-              <span class="price-card">От 2500р</span>
+              <span class="price-card">От 2500 ₽</span>
               <div class="button-container">
                 <a class="button-more" href="#">Подробнее</a>
               </div>
@@ -287,9 +287,9 @@
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </div>
             </a>
-            <div class="card-content card-content-inner">
+            <div class="card-content-inner">
               <span class="hotel-card-text">Гостиница</span>
-              <span class="price-card">От 1500р</span>
+              <span class="price-card">От 1500 ₽</span>
               <div class="button-container">
                 <a class="button-more" href="#">Подробнее</a>
               </div>
@@ -330,12 +330,13 @@
         </ul>
       </div>
 
-      <section class="subscribe">
+      <section class="subscribe-catalog">
         <div class="subscribes-area">
           <div class="subscribe-mail-spam">
-            <h2 class="subscribe-title big-titles-layout">Подпишитесь на рассылку
+            <h2 class="subscribe-title big-titles-layout subscribe-title-catalog">Подпишитесь на рассылку
             </h2>
-            <p class="subscribe-information font-styles">Только полезная информация и никакого спама,<br> честное
+            <p class="subscribe-information font-styles subscribe-information-catalog">Только полезная информация и
+              никакого спама,<br> честное
               бойскаутское!
             </p>
           </div>
@@ -351,12 +352,13 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
+
         <section class="footer-social">
+          <div class="container-footer-catalog">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
-
             <li class="footer-social-item">
-              <a class="social-link social-buttons" href="https://vk.com/htmlacademy">
+              <a class="social-link social-buttons social-buttons-vk" href="https://vk.com/htmlacademy">
                 <svg aria-hidden="true" focusable="false" width="25" height="14" viewBox="0 0 25 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -367,7 +369,7 @@
               </a>
             </li>
             <li class="footer-social-item button-tm">
-              <a class="social-link social-buttons" href="https://t.me/htmlacademy">
+              <a class="social-link social-buttons social-buttons-tm" href="https://t.me/htmlacademy">
                 <svg aria-hidden="true" focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -378,7 +380,7 @@
               </a>
             </li>
             <li class="footer-social-item button-yt">
-              <a class="social-link social-buttons" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social-link social-buttons social-buttons-yt" href="https://www.youtube.com/user/htmlacademyru">
                 <svg aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -389,7 +391,9 @@
               </a>
             </li>
           </ul>
+           </div>
         </section>
+
 
         <section class="footer-contacts">
           <h2 class="visually-hidden">Номер телефона</h2>
