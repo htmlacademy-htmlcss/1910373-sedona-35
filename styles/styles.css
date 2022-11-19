@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,7 +26,7 @@ body {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
 }
 
@@ -42,12 +42,14 @@ body {
 }
 
 /* Header */
+
 .page-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
 }
 
 /* navigation */
+
 .navigation {
   display: flex;
   width: 1200px;
@@ -69,6 +71,7 @@ body {
   padding: 0;
   width: 268px;
   display: flex;
+  margin-right: 70px;
 }
 
 .navigation-logo {
@@ -112,7 +115,6 @@ body {
   content: "";
 }
 
-
 .navigation-link-logo {
   padding: 0;
   margin: 0;
@@ -136,7 +138,7 @@ body {
 }
 
 .navigation-log-menu-1 {
-  background-image: url(../images/search_icon.svg);
+  background-image: url("../images/search_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -144,7 +146,7 @@ body {
 }
 
 .navigation-log-menu-2 {
-  background-image: url(../images/heart_logo.svg);
+  background-image: url("../images/heart_logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -175,7 +177,6 @@ body {
   text-align: center;
 }
 
-
 .navigation-button {
   background-color: #756157;
   color: #FFFFFF;
@@ -187,26 +188,6 @@ body {
   box-sizing: border-box;
   min-width: 160px;
   text-transform: uppercase;
-}
-
-.buttons-sedona:hover,
-.button-more:hover {
-  background-color: #615048;
-}
-
-.buttons-sedona:focus,
-.button-more:focus {
-  background-color: #615048;
-}
-
-.buttons-sedona:active,
-.button-more:active {
-  background-color: #756157;
-  color: #ffffff4d;
-}
-
-.navigation-user-menu {
-  margin-right: 70px;
 }
 
 .navigation-link.navigation-button {
@@ -229,7 +210,6 @@ body {
   padding-top: 51px;
 }
 
-
 .main-index {
   font-family: "PT Sans";
   font-weight: 700;
@@ -248,7 +228,8 @@ body {
   height: 485px;
 }
 
-/* all-big-titles-layout */
+/*all-big-titles-layout*/
+
 .big-titles-layout {
   font-weight: 700;
   font-size: 30px;
@@ -271,7 +252,8 @@ body {
   line-height: 26px;
   color: black;
   text-align: center;
-  margin-top: 2px;
+  margin-top: 0;
+  margin-left: 2px;
   margin-bottom: 90px;
 }
 
@@ -279,7 +261,7 @@ body {
   margin-top: 69px;
 }
 
-/* Section-Advantages and services*/
+/*Section-Advantages and services*/
 
 .advantages-list {
   margin: 0;
@@ -288,8 +270,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  position: relative;
-  bottom: 2px;
 }
 
 .advantages-item.sedona-town {
@@ -321,7 +301,6 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 90px;
-  margin-right: 3px;
 }
 
 .advantages-title-square {
@@ -332,36 +311,47 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 101px;
-  margin-right: -1px;
+  position: relative;
+  top: 2px;
 }
 
-.advantages-title-current_1::before {
+.advantages-title-current-city::before {
   position: absolute;
   width: 60px;
   height: 2px;
+  top: 86px;
+  left: 83px;
+  background-color: #ffffff4d;
+  content: "";
+}
+
+.advantages-title-current-bridge::before {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 86px;
+  left: 79px;
+  background-color: #ffffff4d;
+  content: "";
+}
+
+.advantages-title-current-bridge {
+  position: relative;
+  top: 2px;
+}
+
+.advantages-title-current-city {
+  position: relative;
+  top: 2px;
+  right: 1px;
+}
+
+.advantages-title-current-sedona::before {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  top: 86px;
   left: 170px;
-  bottom: 205px;
-  background-color: #ffffff4d;
-  content: "";
-}
-
-.advantages-title-current_2::before {
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  right: 172px;
-  bottom: 167px;
-  background-color: #ffffff4d;
-  content: "";
-}
-
-
-.advantages-title-current_3::before {
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  right: 170px;
-  bottom: 194px;
   background-color: #0000004d;
   content: "";
 }
@@ -380,12 +370,11 @@ body {
   margin: 0 auto;
 }
 
-
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 63px;
+  margin-top: 64px;
 }
 
 .services-leave {
@@ -399,21 +388,20 @@ body {
 
 .services-item {
   list-style-type: none;
-  background-image: url(../images/logo_house.svg);
+  background-image: url("../images/logo_house.svg");
   background-repeat: no-repeat;
-  background-position: 163px 79px;
+  background-position: 163px 80px;
 }
 
 .services-item-food {
-  background-image: url(../images/logo_food.svg);
+  background-image: url("../images/logo_food.svg");
   background-position: 163px 80px;
 }
 
 .services-item-souvenirs {
-  background-image: url(../images/logo_souvenirs.svg);
+  background-image: url("../images/logo_souvenirs.svg");
   background-position: 168px 77px;
 }
-
 
 .services-title {
   font-weight: 700;
@@ -421,14 +409,13 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 180px;
+  margin-top: 182px;
 }
 
 .advantages-background {
   width: 400px;
   min-height: 384px;
 }
-
 
 .sedona-town,
 .sedona-bridge {
@@ -499,14 +486,18 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  min-height: 52px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .buttons-hotel {
   margin: 0 auto;
-  margin-top: 7px;
+  margin-top: 0;
 }
 
 /* Section-subscribe */
+
 .subscribe {
   background-image: url("../images/subcribe_background_blur.jpg");
   width: 1200px;
@@ -530,40 +521,6 @@ body {
   margin-bottom: 54px;
 }
 
-.button-subscribe:hover,
-.button-apply:hover,
-.button-favorites:hover {
-  background-color: #68a2ca;
-}
-
-.button-subscribe:focus,
-.button-apply:focus,
-.button-favorites:focus {
-  background-color: #68a2ca;
-}
-
-.button-subscribe:active,
-.button-apply:active,
-.button-favorites:active {
-  background-color: #82b3d3;
-  color: #ffffff4d;
-}
-
-.button-favorites-green:hover {
-  color: #ffffff;
-  background-color: #6C9E42;
-}
-
-.button-favorites-green:focus {
-  color: #ffffff;
-  background-color: #6C9E42;
-}
-
-.button-favorites-green:active {
-  color: #FFFFFF4D;
-  background-color: #7DB54F;
-}
-
 .subscribes-area {
   margin: 0 auto;
   display: flex;
@@ -573,7 +530,7 @@ body {
 }
 
 .subscribe-mail-spam {
-  padding-top: 94px;
+  padding-top: 97px;
 }
 
 .field {
@@ -603,6 +560,7 @@ body {
 }
 
 /* page-footer */
+
 .page-footer {
   display: block;
   width: 1200px;
@@ -672,14 +630,14 @@ body {
   left: 13px;
 }
 
-
 /* section-contacts */
+
 .page-footer-container {
   display: flex;
   width: 1060px;
   min-height: 50px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 43px;
   margin-bottom: 30px;
 }
 
@@ -748,6 +706,7 @@ body {
 }
 
 /* modal */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -769,12 +728,11 @@ body {
   border-radius: 30px;
 }
 
-
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 64px;
-  right: 52px;
+  top: 63px;
+  right: 51px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -809,6 +767,9 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 64px;
+  position: relative;
+  top: 1px;
+  left: 1px;
 }
 
 .auth-form {
@@ -830,10 +791,13 @@ body {
   border-radius: 4px;
   background-color: #F2F2F2;
   border: none;
-  background-image: url(../images/date.svg);
+  background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   content: "";
   background-position: 400px;
+  position: relative;
+  top: 1px;
+  left: 1px;
 }
 
 .auth-form-field:hover {
@@ -862,7 +826,7 @@ body {
   width: 110px;
   height: 48px;
   box-sizing: border-box;
-  padding-left: 48px;
+  padding-left: 50px;
   padding-top: 14px;
   padding-bottom: 14px;
   font-family: "PT Sans";
@@ -872,6 +836,8 @@ body {
   border-radius: 4px;
   background-color: #F2F2F2;
   border: none;
+  position: relative;
+  top: 1px;
 }
 
 .modal-button {
@@ -914,14 +880,14 @@ body {
 
 .modal-icon-minus {
   position: absolute;
-  left: 3px;
-  top: 9px;
+  left: 4px;
+  top: 8px;
 }
 
 .modal-icon-plus {
   position: absolute;
-  left: 3px;
-  top: 4px;
+  left: 5px;
+  top: 3px;
 }
 
 .modal-button-plus-adults {
@@ -935,7 +901,7 @@ body {
 
 .modal-button-minus-childs {
   position: relative;
-  right: 55px;
+  right: 57px;
   top: -5px;
   margin: 0;
   padding: 0;
@@ -988,13 +954,25 @@ body {
 }
 
 .label-date-arrival,
-.label-date-of-departure,
+.label-of-departure,
 .label-number-of-persons {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin-top: 15px;
+}
+
+.label-date-arrival {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
+}
+
+.label-of-departure {
+  position: relative;
+  bottom: 2px;
+  left: 1px;
 }
 
 .input-number-of-persons::-webkit-outer-spin-button,
@@ -1017,13 +995,17 @@ body {
   margin-top: 0;
 }
 
-
 .label-of-adults {
-  margin-right: 40px;
+  margin-right: 42px;
+  position: relative;
+  right: -1px;
+  top: 1px;
 }
 
 .label-of-child {
-  margin-right: 82px;
+  position: relative;
+  right: 78px;
+  top: 1px;
 }
 
 .number-of-persons-current {
@@ -1039,6 +1021,9 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
+  position: relative;
+  left: 21px;
+  top: 1px;
 }
 
 .message-no-error {
@@ -1050,6 +1035,13 @@ body {
   line-height: 21px;
   color: #333333;
   margin-bottom: 23px;
+  position: relative;
+  left: 21px;
+  top: 1px;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 /* tooltip */
@@ -1060,7 +1052,7 @@ body {
   width: 26px;
   height: 26px;
   right: 0;
-  bottom: 0;
+  top: 0;
 }
 
 .tooltip-toggle {
@@ -1089,18 +1081,20 @@ body {
   color: #FFFFFF;
   padding-left: 22px;
   padding-right: 18px;
-  padding-top: 15px;
+  padding-top: 22px;
   padding-bottom: 18px;
   width: 256px;
+  min-height: 143px;
   position: absolute;
+  top: 23px;
+  left: -116px;
   box-sizing: border-box;
   margin-top: 17px;
-  transform: translateX(-116px);
   display: none;
 }
 
 .tooltip-text::before {
-  background-image: url(../images/triangle.svg);
+  background-image: url("../images/triangle.svg");
   background-repeat: no-repeat;
   content: "";
   position: absolute;
@@ -1108,7 +1102,6 @@ body {
   left: 119px;
   width: 19px;
   height: 9px;
-
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1120,13 +1113,10 @@ body {
   position: relative;
 }
 
-.modal-container-close {
-  display: none;
-}
-
 /* catalog */
+
 .section-container {
-  background-image: url(../images/catalog_background.jpg);
+  background-image: url("../images/catalog_background.jpg");
   width: auto;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1198,12 +1188,12 @@ body {
   right: 27px;
   top: 3px;
   content: "";
-  background-image: url(../images/catalog_house.svg);
+  background-image: url("../images/catalog_house.svg");
   background-repeat: no-repeat;
 }
 
 .breadcrumbs-item-current::before {
-  background-image: url(../images/arrow.svg);
+  background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   width: 8px;
   height: 20px;
@@ -1223,7 +1213,7 @@ body {
 
 .breadcrumbs-link-current:focus {
   color: #ffffff;
-  border: 3px solid #83b3d3
+  border: 3px solid #83b3d3;
 }
 
 .breadcrumbs-link-current:active {
@@ -1300,13 +1290,13 @@ body {
 
 .range-toggle:hover {
   background-color: #FFFFFF;
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 5px #00000040;
 }
 
 .range-toggle:focus {
   background-color: #FFFFFF;
   outline: 3px solid #83b3d3;
-  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 5px #00000040;
 }
 
 .range-toggle:active {
@@ -1347,7 +1337,6 @@ body {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
-
 }
 
 .list-view {
@@ -1363,6 +1352,12 @@ body {
   min-height: 48px;
   outline: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.item-view {
+  display: flex;
+  width: 48px;
+  flex-wrap: wrap;
 }
 
 .button-view:hover {
@@ -1425,7 +1420,7 @@ li:first-child .button-view {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  background-image: url(../images/check-mark.svg);
+  background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 11px;
@@ -1476,17 +1471,9 @@ li:first-child .button-view {
   margin: 0;
   text-transform: uppercase;
   margin-top: 6px;
-}
-
-.list-view {
-  display: flex;
-  width: 160px;
-}
-
-.item-view {
-  display: flex;
-  width: 48px;
-  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .hotel-list {
@@ -1496,6 +1483,7 @@ li:first-child .button-view {
   width: 1060px;
   padding: 0;
   margin: 0 auto;
+  list-style-type: none;
 }
 
 .hotel-item {
@@ -1564,7 +1552,7 @@ li:first-child .button-view {
   position: relative;
   bottom: 1px;
   left: 1px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1714,6 +1702,7 @@ li:first-child .button-view {
   min-height: 415px;
   background-size: 100% auto;
   background-color: #FFFFFF;
+  margin: 0 auto;
 }
 
 .button-subscribe {
@@ -1734,7 +1723,7 @@ li:first-child .button-view {
 
 .button-reset:hover {
   color: #ffffff;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .button-reset:focus {
@@ -1764,7 +1753,7 @@ li:first-child .button-view {
 .button-favorites {
   text-transform: uppercase;
   text-decoration: none;
-  color: ffffff;
+  color: #FFFFFF;
   padding: 8px 20px;
   background-color: #82b3d3;
   border-radius: 4px;
@@ -1814,12 +1803,6 @@ li:first-child .button-view {
   padding-right: 6px;
 }
 
-.amount-hotel {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-}
-
 .select-control {
   font-family: "PT Sans";
   width: 292px;
@@ -1832,7 +1815,7 @@ li:first-child .button-view {
   border-radius: 4px;
   color: #333333;
   appearance: none;
-  background-image: url(../images/arrow-down.svg);
+  background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 260px 18px;
   margin-left: 128px;
@@ -1855,10 +1838,6 @@ li:first-child .button-view {
   outline: 2px solid #0000004d;
 }
 
-.hotel-list {
-  list-style-type: none;
-}
-
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
@@ -1869,6 +1848,11 @@ li:first-child .button-view {
 }
 
 .pagination-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 400px;
   position: relative;
   bottom: 3px;
 }
@@ -1891,14 +1875,6 @@ li:first-child .button-view {
   margin-left: 70px;
   margin-top: 80px;
   margin-bottom: 60px;
-}
-
-.pagination-list {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  width: 400px;
 }
 
 .pagination-item {
@@ -1954,8 +1930,8 @@ li:first-child .button-view {
   top: 2px;
 }
 
-.subscribe-catalog {
-  margin: 0 auto;
+.subscribe-mail-spam-catalog {
+  padding-top: 94px;
 }
 
 .subscribe-information-catalog {
@@ -1974,4 +1950,63 @@ li:first-child .button-view {
 .pagination-current-link-number-one:active {
   background-color: #F2F2F2;
   color: black;
+}
+
+/* footer */
+
+.page-footer-container-catalog {
+  position: relative;
+  bottom: 3px;
+}
+
+/* states-elements */
+
+.buttons-sedona:hover,
+.button-more:hover {
+  background-color: #615048;
+}
+
+.buttons-sedona:focus,
+.button-more:focus {
+  background-color: #615048;
+}
+
+.buttons-sedona:active,
+.button-more:active {
+  background-color: #756157;
+  color: #ffffff4d;
+}
+
+.button-subscribe:hover,
+.button-apply:hover,
+.button-favorites:hover {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:focus,
+.button-apply:focus,
+.button-favorites:focus {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:active,
+.button-apply:active,
+.button-favorites:active {
+  background-color: #82b3d3;
+  color: #ffffff4d;
+}
+
+.button-favorites-green:hover {
+  color: #ffffff;
+  background-color: #6C9E42;
+}
+
+.button-favorites-green:focus {
+  color: #ffffff;
+  background-color: #6C9E42;
+}
+
+.button-favorites-green:active {
+  color: #FFFFFF4D;
+  background-color: #7DB54F;
 }
